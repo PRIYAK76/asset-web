@@ -1,0 +1,62 @@
+/* styles.css */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.page-not-found {
+  text-align: center;
+  padding: 100px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-not-found h1 {
+  font-size: 100px;
+  color: #a0d2eb;
+  animation: shake 1s ease-in-out;
+}
+
+.page-not-found p {
+  font-size: 24px;
+  color: #555;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.page-not-found .btn-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #a0d2eb;
+  color: black;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-not-found .btn-home:hover {
+  background-color: #83ccf0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
